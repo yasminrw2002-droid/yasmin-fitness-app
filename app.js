@@ -1,0 +1,5 @@
+function show(id){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active')}
+const workouts={'Lower A':['Squat','RDL','Leg Press'],'Upper A':['DB Bench','Lat Pulldown','Cable Row'],'Lower B':['Hip Thrust','Split Squat','Leg Curl'],'Upper B':['Chest Row','Incline Press','Bicep Curl']};
+const rotation=['Lower A','Upper A','Lower B','Upper B'];const todayWorkout=rotation[new Date().getDate()%4];document.getElementById('workoutBox').innerHTML='<h3>'+todayWorkout+'</h3><ul>'+workouts[todayWorkout].map(x=>'<li>'+x+'</li>').join('')+'</ul>';
+const pattern=['Work','Work','Off','Off','Work','Work','Work','Off','Off','Work','Work','Off','Off','Off'];let p='';pattern.forEach((x,i)=>p+='<div class="card">Day '+(i+1)+' - '+x+'</div>');document.getElementById('plannerBox').innerHTML=p;
+function saveWeight(){let w=localStorage.getItem('weights');let arr=w?JSON.parse(w):[];arr.push(document.getElementById('weight').value);localStorage.setItem('weights',JSON.stringify(arr));document.getElementById('weights').innerText='Entries: '+arr.join(', ')}
