@@ -1,2 +1,0 @@
-const workouts={"Lower A":["Squat 3x8-10","Romanian Deadlift 3x8-10","Leg Press 3x10-12"],"Upper A":["DB Bench Press 3x8-10","Lat Pulldown 3x8-10","Cable Row 3x10-12"],"Lower B":["Hip Thrust 3x8-12","Split Squat 3x8-10","Leg Extension 3x12-15"],"Upper B":["Chest Supported Row 3x8-10","Incline DB Press 3x8-10","DB Curls 3x10-12"]};
-const meals=["Overnight Oats","Skyr and Banana","Chicken Rice Bowl","Eggs and Almonds","Salmon and Potatoes"];
